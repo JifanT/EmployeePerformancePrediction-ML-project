@@ -95,9 +95,10 @@ Libraries:
   - Machine Learning: scikit-learn, xgboost, imblearn
   - Data Analysis: pandas, numpy
   - Visualization: matplotlib, seaborn
-
 Web Deployment: Streamlit
+
 Tools: Jupyter Notebook, Joblib (model persistence)
 ### Outcomes
 Developed a machine learning model with >99% training accuracy and optimized generalization performance.
+
 Built a user-friendly Streamlit app where HR professionals can input employee data and receive performance predictions.
