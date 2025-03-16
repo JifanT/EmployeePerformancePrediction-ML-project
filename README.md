@@ -92,12 +92,14 @@ https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-da
   - Build an interactive Streamlit application.
 ### Technologies Used
 Python: Core programming language
+
 Libraries:
   - Machine Learning: scikit-learn, xgboost, imblearn
   - Data Analysis: pandas, numpy
   - Visualization: matplotlib, seaborn
 
 Web Deployment: Streamlit
+
 Tools: Jupyter Notebook, Joblib (model persistence)
 ### Outcomes
 Developed a machine learning model with >99% training accuracy and optimized generalization performance.
