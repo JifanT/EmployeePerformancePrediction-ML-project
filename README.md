@@ -1,5 +1,4 @@
 # Employee Performance Prediction Using Machine Learning
-## Machine Learning Project
 ### Project Overview:
 The Employee Performance Prediction project aims to predict the performance scores of employees based on various workplace and personal factors. By leveraging machine learning models, the project identifies key factors influencing employee performance and provides actionable insights for HR teams to make data-driven decisions. This predictive system helps improve workforce management, identify high-performing employees, and provide early intervention for underperformers.
 ### Objective
