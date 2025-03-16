@@ -49,35 +49,36 @@ https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-da
 - Verify data integrity by checking for missing values, duplicate records, and inconsistencies.
 - Load additional resources such as label encoders and scalers for consistent preprocessing.
 #### Data Preprocessing:
-- **Handle Missing Values and Outliers:**
+**Handle Missing Values and Outliers**
   - Impute missing values using appropriate strategies (e.g., mean/median for numerical features, mode for categorical).
   - Detect and manage outliers using the **IQR method** or **Z-score**.
-- **Encode Categorical Variables:**
+**Encode Categorical Variables**
   - Apply **Label Encoding** for categorical columns (e.g., Job Title, Education Level, Remote Work Frequency).
   - Ensure consistent mapping of labels during training and deployment.
-- **Standardize Numerical Features:**
+**Standardize Numerical Features**
   - Use **StandardScaler** to scale numerical variables (e.g., monthly salary, work hours, training hours) for consistent model performance.
 #### Exploratory Data Analysis (EDA):
-- **Data Summary:**
+**Data Summary**
   - Perform statistical analysis to understand the distribution of features (mean, median, standard deviation).
   - Analyze the class distribution of the **Performance Score**.
-- **Feature Relationships:**
+**Feature Relationships**
   - Visualize correlations between input features using a **heatmap**.
   - Explore relationships between performance score and key attributes (e.g., work hours, salary, satisfaction).
-- **Class Imbalance Analysis:**
+**Class Imbalance Analysis**
   - Identify the imbalance in the target variable and assess its impact on model training.
   - Evaluate the necessity of oversampling or undersampling techniques.
 #### Model Development:
-- **Model Selection:**
+**Model Selection**
   - Implement and evaluate the following machine learning algorithms:
     - Logistic Regression
     - K-Nearest Neighbors (KNN)
+    - GaussianNB
     - Support Vector Classifier (SVC)
     - Decision Tree Classifier
     - Random Forest Classifier
     - Gradient Boosting (GB), AdaBoost, and XGBoost
-- **Hyperparameter Tuning:**
-  - Use **GridSearchCV** to optimize hyperparameters for each model.
+**Hyperparameter Tuning**
+  - Use GridSearchCV to optimize hyperparameters for each model.
   - Perform 5-fold cross-validation to ensure generalizability and reduce overfitting.
 #### Model Evaluation:
   - Evaluate model performance using:
@@ -85,16 +86,16 @@ https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-da
     - Precision, Recall, and F1-score (for class-specific insights)
     - Confusion Matrix for a detailed error analysis
 #### Model Deployment:
-- **Model Saving:**
+**Model Saving**
   - Save the best-performing model and preprocessing objects (scalers, label encoders) using joblib for future use.
-- **Streamlit Web Application:**
+**Streamlit Web Application**
   - Build an interactive Streamlit application.
 ### Technologies Used
 Python: Core programming language
 Libraries:
-- Machine Learning: scikit-learn, xgboost, imblearn
-- Data Analysis: pandas, numpy
-- Visualization: matplotlib, seaborn
+  - Machine Learning: scikit-learn, xgboost, imblearn
+  - Data Analysis: pandas, numpy
+  - Visualization: matplotlib, seaborn
 Web Deployment: Streamlit
 Tools: Jupyter Notebook, Joblib (model persistence)
 ### Outcomes
