@@ -15,6 +15,7 @@ This analysis helps optimize workforce productivity by identifying key performan
 This dataset contains 100,000 rows of data capturing key aspects of employee performance, productivity, and demographics in a corporate environment. It includes details related to the employee's job, work habits, education, performance, and satisfaction. The dataset is designed for various purposes such as HR analytics, employee churn prediction, productivity analysis, and performance evaluation.
 #### Source:
 The dataset used in this analysis has been sourced from Kaggle.
+
 https://www.kaggle.com/datasets/mexwell/employee-performance-and-productivity-data
 #### Columns:
 - Employee_ID: Unique identifier for each employee.
@@ -95,8 +96,8 @@ Libraries:
   - Machine Learning: scikit-learn, xgboost, imblearn
   - Data Analysis: pandas, numpy
   - Visualization: matplotlib, seaborn
-Web Deployment: Streamlit
 
+Web Deployment: Streamlit
 Tools: Jupyter Notebook, Joblib (model persistence)
 ### Outcomes
 Developed a machine learning model with >99% training accuracy and optimized generalization performance.
