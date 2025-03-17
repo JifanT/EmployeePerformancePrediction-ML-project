@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 
-model=joblib.load('PerformanceModel.pkl')
+#model=joblib.load('PerformanceModel.pkl')
 le_job=joblib.load('LabelEncoder_Job.pkl')
 le_edu=joblib.load('LabelEncoder_Edu.pkl')
 le_per=joblib.load('LabelEncoder_Per.pkl')
