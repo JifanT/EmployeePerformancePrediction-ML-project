@@ -3,10 +3,10 @@ import joblib
 import numpy as np
 
 # Load models and encoders
-model = joblib.load(r'C:\Users\HP\PerformanceModel.pkl')
-le_job = joblib.load(r'C:\Users\HP\LabelEncoder_Job.pkl')
-le_el = joblib.load(r'C:\Users\HP\le_Education_Level.pkl')
-scaler = joblib.load(r'C:\Users\HP\StandardScaler1.pkl')
+model = joblib.load('PerformanceModel.pkl')
+le_job = joblib.load('LabelEncoder_Job.pkl')
+le_el = joblib.load('le_Education_Level.pkl')
+scaler = joblib.load('StandardScaler1.pkl')
 
 st.title("Employee Performance Prediction")
 st.write("Fill in the employee details below to predict their performance score.")
