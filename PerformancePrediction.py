@@ -10,6 +10,8 @@ le_rwf=joblib.load('LabelEncoder_Rwf.pkl')
 le_ess=joblib.load('LabelEncoder_Ess.pkl')
 scaler=joblib.load('StandardScaler1.pkl')
 
+st.title("Employee Performance Prediction")
+st.write("Fill in the employee details below to predict their performance score.")
 # Layout for better UI
 col1, col2 = st.columns(2)
 
@@ -40,12 +42,14 @@ education_encoded = le_edu.transform([education_level])[0]
 remote_work_encoded = le_rwf.transform([remote_work_frequency])[0]
 satisfaction_encoded = le_ess.transform([employee_satisfaction_score])[0]
 
-input_features = np.array([[job_title_encoded,years_at_company,education_encoded, monthly_salary, work_hours_per_week, projects_handled, overtime_hours,
-                            remote_work_encoded, training_hours, promotions,satisfaction_encoded]])
+input_features = np.array([[job_title_encoded,years_at_company,education_encoded, monthly_salary, projects_handled, overtime_hours,
+                            remote_work_encoded, promotions, training_hours, work_hours_per_week, satisfaction_encoded]])
 
 input_features_scaled = scaler.transform(input_features)
 
-if st.button("Predict Performance"):
+# Prediction
+if st.button("🔮 Predict Performance"):
     prediction = model.predict(input_features_scaled)
-    st.success(f"Predicted Performance Score: {prediction[0]}")
+    st.success(f"🎯 Predicted Performance Score of Employee: {prediction[0]}")
 
+st.info("Tip: Input the employee's details thoroughly and click 'Predict Performance' to predict the employee performance score.")
